@@ -1,5 +1,7 @@
 -- -------------------------------------------------------------
 -- Create a stored procedure on IBM i DB2 with a Dynamic Select
+-- There are very few IBM i dynamic SQL stored procedure samples 
+-- available. Enjoy this one.
 -- -------------------------------------------------------------
 CREATE OR REPLACE PROCEDURE MYLIB/QCUSTCDTQUERYSAMPLE1() 
   DYNAMIC RESULT SETS 1 
