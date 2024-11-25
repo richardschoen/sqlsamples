@@ -42,6 +42,9 @@ values qgpl.unhex(qsys2.base64_decode('hpaWQIKBmQ=='));
 -or-
 
 select qgpl.unhex(cast(qsys2.base64_decode('hpaWQIKBmQ==') as varchar(32000))) as returnval from sysibm.sysdummy1;
+
+Result: foo bar
+
 ```
 
 
