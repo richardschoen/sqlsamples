@@ -37,6 +37,10 @@ Result: hpaWQIKBmQ==
 ```
 -- Decode value and convert from Hex to string
 ```
+values Interpret(qsys2.base64_decode('hpaWQIKBmQ==') as Char(15));
+
+-or-
+
 values qgpl.unhex(qsys2.base64_decode('hpaWQIKBmQ=='));
 
 -or-
