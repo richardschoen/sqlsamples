@@ -27,6 +27,9 @@ END  ;
 -- Encode value to Base64
 ```
 values qsys2.base64_encode('foo bar');
+
+Result: hpaWQIKBmQ==
+
 ```
 -- Decode value and convert from Hex to string
 ```
