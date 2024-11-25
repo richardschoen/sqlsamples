@@ -1,4 +1,6 @@
 # Base64 Encode/Decode with IBM i DB2
+
+## First create the Unhex function. We used QGPL library
 ```
 -- Create this function
 CREATE FUNCTION Qgpl.UNHEX (          
