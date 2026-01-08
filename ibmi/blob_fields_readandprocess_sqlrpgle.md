@@ -1,7 +1,7 @@
 # How do I read and process Blob fields in SQLRPGLE
 
 ## Problem
-Wanting to download a blob field using the IBM i QSYS2.HTTP_GET_BLOB SQL function
+Wanting to download a blob field using the IBM i QSYS2.HTTP_GET_BLOB SQL function.
 
 ## Resolution
 
