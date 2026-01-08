@@ -28,3 +28,28 @@ exec sql
               NAMING = *SYS,
               CLOSQLCSR = *ENDMOD;
 ```
+
+Once you've made these changes your program should be able to use the QSYS2.HTTP_GET_BLOB function to successfully download larger files via URL and write to the IFS.  
+
+```
+// We now have our URL to download the ZIP file.
+// Let's go get the file.
+// Get the binary file
+
+exec sql
+  values QSYS2.HTTP_GET_BLOB(:downloadUrl)
+  into :zipBlob;
+
+// Build the IFS path and filename to write the ZIP file to
+ifsPath = '/tmp/mydownload.zip';
+
+// Write to IFS (binary-safe, replace if exists)
+exec sql
+  call QSYS2.IFS_WRITE_BINARY(
+    PATH_NAME => :ifsPath,
+    LINE      => :zipBlob,
+    OVERWRITE => 'REPLACE'
+  );
+```
+
+
