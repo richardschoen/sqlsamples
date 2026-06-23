@@ -1,4 +1,4 @@
-## List IBM i user profiles by last use data descending
+## List IBM i user profiles by last use date descending
 We list by last used date and filter ourt where previous signon = null   
 ```
 select *
