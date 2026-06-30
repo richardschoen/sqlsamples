@@ -1,7 +1,10 @@
 # List jobs submitted to job queues
-This is good if you wsnt to programatically release or manipulate jobs in a job queue.   
+This is good if you want to programatically release or manipulate jobs in a job queue.   
 
-List all jobs and all fields in job queu lists   
+## Use cases
+- Find an release opr end jobs.
+
+List all jobs and all fields in job queue lists.     
 ```
 -- Query all jobs in job queue
 SELECT *
