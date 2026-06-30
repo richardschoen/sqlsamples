@@ -14,6 +14,7 @@ WHERE JOB_NAME = '%%';
 
 List all jobs with selected columns   
 ```
+-- Query all jobs in job queue with only selected fields.   
 SELECT 
 CAST(JOB_NAME as CHAR(30)) as JOB_NAME,
 CAST(JOB_NAME_SHORT as CHAR(10)) as JOB_NAME_SHORT,
