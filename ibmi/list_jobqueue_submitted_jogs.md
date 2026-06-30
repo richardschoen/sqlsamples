@@ -2,7 +2,7 @@
 This is good if you want to programatically release or manipulate jobs in a job queue.   
 
 ## Use cases
-- Find an release opr end jobs.
+- Find and release or end selected jobs.    
 
 List all jobs and all fields in job queue lists.     
 ```
