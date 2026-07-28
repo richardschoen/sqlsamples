@@ -1,4 +1,6 @@
--- This SQL query lists only objects that don't match their source
+-- This SQL query lists only objects that don't match their source.
+-- Change the library name or add a library placeholder of @@LIBRARY
+--  if using with the QSHONI/QSHQRYSRC command 
 WITH OBJECT_SOURCE AS
 (
     SELECT
