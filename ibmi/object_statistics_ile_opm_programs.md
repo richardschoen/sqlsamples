@@ -72,7 +72,8 @@ ORDER BY
     O.OBJTYPE,
     M.BOUND_MODULE;
 ```
-## This one is another potential alternative: 
+## This one is another potential alternative
+Not tested, but give it a try.
 ```
 CREATE OR REPLACE TABLE qtemp.object_inventory AS
 (
