@@ -1,4 +1,4 @@
-# View TCP/IP Journal Entries
+# View TCP/IP Journal Entries when using IBM i Packet Firewall/Filtering
 ```
 cl:CRTDUPOBJ OBJ(QATOFIPF) FROMLIB(QSYS) 
           OBJTYPE(*FILE) TOLIB(TMP) NEWOBJ(IPFILTER);
