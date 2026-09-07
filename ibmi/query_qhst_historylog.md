@@ -9,3 +9,11 @@ SELECT MESSAGE_TIMESTAMP, MESSAGE_ID,
  ORDER BY MESSAGE_TIMESTAMP DESC
 ```
 That reads the last seven days of your history log, newest first, as a table you can filter and search.
+
+Same query with all fields.
+```
+SELECT *
+ FROM TABLE(QSYS2.HISTORY_LOG_INFO(
+        START_TIME => CURRENT TIMESTAMP - 7 DAYS))
+ ORDER BY MESSAGE_TIMESTAMP DESC;
+```
