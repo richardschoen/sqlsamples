@@ -8,3 +8,4 @@ SELECT MESSAGE_TIMESTAMP, MESSAGE_ID,
         START_TIME => CURRENT TIMESTAMP - 7 DAYS))
  ORDER BY MESSAGE_TIMESTAMP DESC
 ```
+That reads the last seven days of your history log, newest first, as a table you can filter and search.
